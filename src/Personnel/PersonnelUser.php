@@ -33,12 +33,12 @@ class PersonnelUser
     public $username;
 
     /**
-     * @var null|PersonnelUser
+     * @var null|string
      */
-    public $supervisor;
+    public $supervisorEmail;
 
     /**
-     * @var null|PersonnelUser
+     * @var null|string
      */
-    public $spouse;
+    public $spouseEmail;
 }
