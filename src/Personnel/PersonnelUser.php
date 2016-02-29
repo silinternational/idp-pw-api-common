@@ -28,6 +28,11 @@ class PersonnelUser
     public $employeeId;
 
     /**
+     * @var string
+     */
+    public $username;
+
+    /**
      * @var null|PersonnelUser
      */
     public $supervisor;
