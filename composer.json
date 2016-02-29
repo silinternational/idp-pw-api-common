@@ -1,0 +1,22 @@
+{
+    "name": "silinternational/idp-pw-api-common",
+    "description": "Common interfaces and bases classes for integration components.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Phillip Shipley",
+            "email": "phillip_shipley@sil.org"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "5.2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sil\\IdpPw\\Common\\": "src/"
+        }
+    }
+}
