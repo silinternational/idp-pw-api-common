@@ -9,7 +9,7 @@ interface PersonnelInterface
 {
     /**
      * @param mixed $employeeId
-     * @return PersonnelUser|null
+     * @return PersonnelUser
      * @throws NotFoundException
      * @throws \Exception
      */
@@ -17,7 +17,7 @@ interface PersonnelInterface
 
     /**
      * @param mixed $username
-     * @return PersonnelUser|null
+     * @return PersonnelUser
      * @throws NotFoundException
      * @throws \Exception
      */
@@ -25,7 +25,7 @@ interface PersonnelInterface
 
     /**
      * @param mixed $email
-     * @return PersonnelUser|null
+     * @return PersonnelUser
      * @throws NotFoundException
      * @throws \Exception
      */
