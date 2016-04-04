@@ -1,14 +1,16 @@
 <?php
 namespace Sil\IdpPw\Common\Auth;
 
+use yii\web\Request;
+
 interface AuthnInterface
 {
     /**
-     * @param yii\web\Request|null $request
+     * @param \yii\web\Request|null $request
      * @return User|null If null is returned the user was redirected to IdP
      * @throws InvalidLoginException
      */
-    public function login(yii\web\Request $request = null);
+    public function login(Request $request = null);
 
     /**
      * @param User|null $user
