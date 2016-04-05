@@ -10,22 +10,22 @@ class User
     /**
      * @var string
      */
-    public $employee_id;
+    public $employeeId;
 
     /**
      * @var string
      */
-    public $first_name;
+    public $firstName;
 
     /**
      * @var string
      */
-    public $last_name;
+    public $lastName;
 
     /**
      * @var string
      */
-    public $idp_username;
+    public $idpUsername;
 
     /**
      * @var string
