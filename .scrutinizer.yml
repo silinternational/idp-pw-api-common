@@ -4,7 +4,7 @@ filter:
     paths:
         - src/*
     dependency_paths:
-        - application/vendor/*
+        - vendor/*
 
 ########### [End of project-specific section] ############
 
