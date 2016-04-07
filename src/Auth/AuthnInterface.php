@@ -3,6 +3,10 @@ namespace Sil\IdpPw\Common\Auth;
 
 use yii\web\Request;
 
+/**
+ * Interface AuthnInterface
+ * @package Sil\IdpPw\Common\Auth
+ */
 interface AuthnInterface
 {
     /**
