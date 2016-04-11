@@ -8,13 +8,13 @@ namespace Sil\IdpPw\Common\PhoneVerification;
 interface PhoneVerificationInterface
 {
     /**
-     * Initiate phone verification
+     * Initiate phone verification, returns $code or newly generated code/identifier to be stored in Reset model
      * @param string $phoneNumber
-     * @param string|null $code
+     * @param string $code
      * @return string The verification code used, or another identifier to be used with self::verify() later
      * @throws \Exception
      */
-    public function send($phoneNumber, $code = null);
+    public function send($phoneNumber, $code);
 
     /**
      * Verify that previously stored $resetCode matches the code provided by the user, $userProvided
