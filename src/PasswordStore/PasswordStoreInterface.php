@@ -9,17 +9,18 @@ interface PasswordStoreInterface
 {
     /**
      * Get metadata about user's password including last_changed_date and expires_date
-     * @param string $username
-     * @return array<string, string>
+     * @param string $employeeId
+     * @return \Sil\IdpPw\Common\PasswordStore\UserPasswordMeta
+     * @throw \Sil\IdpPw\Common\PasswordStore\UserNotFoundException
      */
-    public function getMeta($username);
+    public function getMeta($employeeId);
 
     /**
      * Set user's password
-     * @param string $username
+     * @param string $employeeId
      * @param string $password
      * @return boolean
      * @throws \Exception
      */
-    public function set($username, $password);
+    public function set($employeeId, $password);
 }
