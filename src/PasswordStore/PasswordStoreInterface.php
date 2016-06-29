@@ -19,7 +19,7 @@ interface PasswordStoreInterface
      * Set user's password
      * @param string $employeeId
      * @param string $password
-     * @return boolean
+     * @return \Sil\IdpPw\Common\PasswordStore\UserPasswordMeta
      * @throws \Exception
      */
     public function set($employeeId, $password);
