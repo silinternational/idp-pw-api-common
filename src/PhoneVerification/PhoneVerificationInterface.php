@@ -28,4 +28,12 @@ interface PhoneVerificationInterface
      * @throws \Sil\IdpPw\Common\PhoneVerification\NotMatchException
      */
     public function verify($resetCode, $userProvided);
+
+    /**
+     * Apply any special formatting to phone number. May use service provider like Nexmo Insights API to
+     * get proper international formatting. This is used for more friendly display to users.
+     * @param string $phoneNumber
+     * @return string
+     */
+    public function format($phoneNumber);
 }
