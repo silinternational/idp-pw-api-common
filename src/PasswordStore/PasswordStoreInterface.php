@@ -12,6 +12,7 @@ interface PasswordStoreInterface
      * @param string $employeeId
      * @return \Sil\IdpPw\Common\PasswordStore\UserPasswordMeta
      * @throw \Sil\IdpPw\Common\PasswordStore\UserNotFoundException
+     * @throw \Sil\IdpPw\Common\PasswordStore\AccountLockedException
      */
     public function getMeta($employeeId);
 
@@ -21,6 +22,8 @@ interface PasswordStoreInterface
      * @param string $password
      * @return \Sil\IdpPw\Common\PasswordStore\UserPasswordMeta
      * @throws \Exception
+     * @throw \Sil\IdpPw\Common\PasswordStore\UserNotFoundException
+     * @throw \Sil\IdpPw\Common\PasswordStore\AccountLockedException
      */
     public function set($employeeId, $password);
 }
